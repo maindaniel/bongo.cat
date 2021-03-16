@@ -60,7 +60,8 @@ hr {
   margin: 140px 0 0 -50%;
   border: none;
   transform: rotate(13.5deg);
-  z-index: 10
+  z-index: 10;
+  top: 38px;
 }
 
 a#github {
@@ -235,7 +236,9 @@ select#select-instrument option {
 
 .cat>#head {
   background-image: url(../images/cat.png);
-  z-index: 10
+  z-index: 10;
+  background-position-y: 0;
+  background-position-x: 0;
 }
 
 .cat>#mouth {
@@ -245,16 +248,23 @@ select#select-instrument option {
 
 .cat>#paw-left {
   background-image: url(../images/paw-left.png);
-  z-index: 30
+  z-index: 30;
+  background-position-x: 600px;
+  background-position-y: 154px;
 }
 
 .cat>#paw-right {
   background-image: url(../images/paw-right.png);
-  z-index: 30
+  z-index: 30;
+  background-position: -30px 18px;
 }
 
 .instruments {
-  z-index: 20
+  z-index: 20;
+}
+
+.instruments div {
+  top: 40px !important;
 }
 
 .instruments>#bongo, #layer-bongo {

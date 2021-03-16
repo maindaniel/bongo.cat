@@ -201,7 +201,11 @@ $.play = function(instrument, key, state) {
   } else {
     pressed.remove(commonKey);
   }
-  $(id).css("background-position-x", (state ? "-800px" : "0"));
+  if(id === '#paw-left') {
+    $(id).css("background-position-x", (state ? "-350px" : "600px"));
+  } else if(id === '#paw-right') {
+    $(id).css("background-position-x", (state ? "-937px" : "-30px"));
+  }
 }
 $.layers = function(selectedLayer) {
   if (selectedLayer !== currentLayer) {
