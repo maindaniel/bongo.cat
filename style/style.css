@@ -241,11 +241,6 @@ select#select-instrument option {
   background-position-x: 0;
 }
 
-.cat>#mouth {
-  background-image: url(../images/mouth.png);
-  z-index: 20
-}
-
 .cat>#paw-left {
   background-image: url(../images/paw-left.png);
   z-index: 30;
